@@ -4,16 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container{
+            margin: 10px 20px;
+            font-family: Arial, Helvetica, sans-serif;    
+            background-color: black;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header-list{
+            list-style: none;
+            margin-left: 20px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .header-logo{
+            color: #fff;
+        }
+        .header-ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        .header-nav{
+            margin-right: 50px;
+        }
+
+
+
+    </style>
+
+
 </head>
 <body>
     <div class="container">
-        <h1 class="logo"></h1>
-        <nav class="nav">
-            <ul>
-                <li><a href="#" >About us</a></li>
-                <li><a href="#" >Contact</a></li>
-                <li><a href="#" >Info</a></li>
-                <li><a href="#">Click here</a></li>
+        <h1 class="header-logo">Logo</h1>
+        <nav class="header-nav">
+            <ul class="header-ul">
+                <li class="header-list"><a href="#" >About us</a></li>
+                <li class="header-list"><a href="#" >Contact</a></li>
+                <li class="header-list"><a href="#" >Info</a></li>
+                <li class="header-list"><a href="#">Click here</a></li>
             </ul>
         </nav>
     </div>
