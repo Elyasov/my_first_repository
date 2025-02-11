@@ -340,3 +340,166 @@
     
 // console.log(comParispon(a,b))
 
+
+    // Задача 22
+    
+//  const myNumber1 = 20
+ 
+//  const myNumber2 = 3
+
+//  console.log(myNumber1/myNumber2)
+
+//  console.log(myNumber1%myNumber2)
+
+    // Задача 23
+    
+// console.log(3 || true && null || false)
+
+// console.log(true && false)
+
+// console.log(5 && 10)
+
+    // Задача 24
+    
+//  let a = 12
+
+// Variant 1
+
+// a = a + 9
+
+// console.log(a)
+
+// a = a - 4
+
+// console.log(a)
+
+// a = a * 2
+
+// console.log(a)
+
+// a = a / 4
+
+// console.log(a)
+
+// Varinat 2 
+
+// a += 9
+
+// console.log(a)
+
+// a -= 4
+
+// console.log(a)
+
+// a *= 2
+
+// console.log(a)
+
+// a /= 4
+
+// console.log(a)
+
+    // Задача 26
+
+// function fn (){
+//     console.log("Privet mir")
+
+//     return function abc (a){
+//         console.log(a)
+//     }
+// }
+
+// fn()("Salam")
+
+  
+  // Задача 303
+
+   // Variant 1
+
+//   setTimeout(function fn () {
+//         console.log('Privet mir')
+//   },2000)
+
+ 
+   // Variant 2 
+   
+//   function fn (){
+//         console.log('Privet mir')
+//   }
+
+//   setTimeout(fn,2000)
+
+
+    // Задача 31
+
+//     let a = 1
+
+//     let creatInterval = setInterval(()=>{
+//         console.log('Sms number' + a)
+//         a = a + 1
+//     },2000)
+
+// clearInterval(creatInterval)
+
+// setTimeout(() => {
+//     clearInterval(creatInterval)
+// }, 11000);
+
+      //  Задача 32
+
+    // let arr = [1,4,'Vuqar',false]
+
+    // arr.unshift('Privet')
+
+    // arr.unshift(10)
+
+    // console.log(arr.length)
+
+    // console.log(arr)
+
+
+
+    // Задача 33
+    
+//   const arr = [1,6,'salam']
+  
+//   arr[arr.length] = 'Vuqar'
+
+//   console.log(arr)
+
+//  console.log(arr)
+
+//  console.log(arr.length)
+
+
+    //  Задача 34
+
+const arrObj = [
+    {
+        car: 'Hyundai',
+        price: 20000,
+        isAvalible: true},
+    {
+        car: 'Toyota',
+        price: 15000,
+        isAvalible: true},
+    {
+        car: 'Opel',
+        price: 30000,
+        isAvalible: false}
+]   
+
+
+const newObj = {
+    car: 'Chevrolet',
+    price: 14000,
+    isAvalible: false
+}
+
+// arrObj.push(newObj)
+
+// console.log(arrObj)
+
+console.log(arrObj[0].car)
+
+
