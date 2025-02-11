@@ -204,4 +204,139 @@
 
     // console.log(difference(10,9))
 
+    // Задача 11
+
+//     setTimeout(()=> {
+//      console.log('Привет Мир')
+// },5000)
+  
+    // Задача 12
+
+// const person = {
+//     name: 'Vuqar',
+//     surname: 'Elyasov',
+//     myFavoriteNumber: 10
+// }
+
+// const personText = `My name is ${person.name} ${person.surname} and my favorite number is ${person.myFavoriteNumber} `
+// console.log(personText)
+
+    // Задача 13
+ 
+    // const a = 'Salam aleykum' 
     
+    // console.log(a.length)
+
+    // Задача 14 
+
+    // let text = 'football'
+
+    // console.log(text instanceof String)
+    
+    // console.log(typeof(text))
+
+
+    // let text2 = text.toUpperCase()
+
+    // console.log(text2)
+
+    // toUpperCase(text)
+
+    // const text = new String ("Vuqar")
+
+    // console.log(text instanceof String)
+
+    // console.log(typeof text)
+
+     // Задача 15
+
+    // let a = 'Good morning'
+    
+    // let b = a.replace('morning','evening')
+
+    // console.log(b)
+
+    // Задача 16
+
+    // const arr = [90, 'name', true]
+
+    // console.log(arr[0])
+
+    // console.log(arr.length)
+
+    // Задача 17
+
+    // const arr = [90, 'name', true]
+
+    // console.log(arr)
+
+    // arr[1] = 'surname'
+
+    // console.log(arr)
+
+    // Задача 18
+
+    // const arr = [95, 'name', true, 0]
+
+
+    // arr.forEach((element) =>{   
+    //     console.log(element)
+    // })
+
+
+    // Задача 19
+
+    // let arr = [95, 'name', true, 0]
+
+    // arr.push(5,'salam')
+
+    // console.log(arr)
+
+    // console.log(arr.length)
+
+    // Задача 20
+
+    // const date = new Date()
+
+    // console.log(date)
+
+    // const dateInMs = date.getTime()
+
+    // console.log(dateInMs)
+
+    //  Задача 21
+
+        // Variant 1
+
+    // let a = 90
+
+    // let b = '8'
+
+    // b = parseInt(b)
+
+    // console.log(a <= b)
+
+
+
+        // Varinat 2
+
+    // function ab (a,b){
+    //     if (a <= b ){
+    //         console.log(false)
+    //     }
+    //     if (a > b) {
+    //         console.log(true)
+    //     }
+    // }
+
+    // console.log(ab(a,b))
+
+
+    // Varinat 3
+
+// let comParispon = (a,b) => {
+//     return (a <= b) ? false : true
+// } 
+    
+// console.log(comParispon(a,b))
+
