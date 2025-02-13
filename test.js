@@ -474,32 +474,286 @@
 
     //  Задача 34
 
-const arrObj = [
-    {
-        car: 'Hyundai',
-        price: 20000,
-        isAvalible: true},
-    {
-        car: 'Toyota',
-        price: 15000,
-        isAvalible: true},
-    {
-        car: 'Opel',
-        price: 30000,
-        isAvalible: false}
-]   
+// const arrObj = [
+//     {
+//         car: 'Hyundai',
+//         price: 20000,
+//         isAvalible: true},
+//     {
+//         car: 'Toyota',
+//         price: 15000,
+//         isAvalible: true},
+//     {
+//         car: 'Opel',
+//         price: 30000,
+//         isAvalible: false}
+// ]   
 
 
-const newObj = {
-    car: 'Chevrolet',
-    price: 14000,
-    isAvalible: false
-}
+// const newObj = {
+//     car: 'Chevrolet',
+//     price: 14000,
+//     isAvalible: false
+// }
 
 // arrObj.push(newObj)
 
 // console.log(arrObj)
 
-console.log(arrObj[0].car)
+// console.log(arrObj[0].car)
 
 
+    //  Задаача 35
+
+// const obj = {
+//     key1: true,
+//     key5: null,
+//     key3: 'abc',
+//     key4: NaN,
+//     key10: 10
+// }
+
+//  const objKeys = Object.keys(obj)
+
+//  console.log(objKeys)
+
+    // Variant 1
+
+//  objKeys.forEach((element)=>{
+//     if (element === 'key1' || element === 'key3' ){
+//         console.log(obj[element])
+//     }
+//  })
+
+    // Variant 2  
+
+// for (element in obj ){
+//     if (element === 'key1' || element === 'key3'){
+//         console.log(element)
+//     }
+// }
+
+
+    // Задача 37
+
+// const obj = {
+//     price: 50,
+//     car: 'Hyundai',
+//     model: 'Sonata',
+
+// }
+    
+// Object.prototype.country = 'Japan'
+
+
+// for (key in obj){
+//     if (obj.hasOwnProperty (key) ){
+//         console.log(obj[key]) 
+//     }
+// }
+
+    // Задача 38
+    
+      // Variant 1  
+// function isArrayEmpty (myArray){
+//     if (myArray.length > 0){
+//         return "Массив не пустой"
+//     } else {
+//         return "Массив пустой"
+//     }
+// }    
+
+// console.log(isArrayEmpty([1,5,9]))
+
+     //  Variant 2
+
+// function isArrayEmpty (myArray){
+//     if (myArray.length > 0){
+//         return "Массив не пустой"
+//     } 
+//     if (myArray.length === 0){
+    
+//        return "Массив пустой"
+
+//     }
+// }   
+
+// console.log(isArrayEmpty([]))
+
+
+        //  Variant 3
+
+// function isArrayEmpty (myArray){
+//     if (myArray.length > 0){
+//         return "Массив не пустой"
+//     }     
+//        return "Массив пустой"
+// }   
+
+// console.log(isArrayEmpty([]))
+
+
+        //  Variant 4
+
+// const isArrayEmpty = (myArray) => 
+    
+//     myArray.length > 0 ?
+//     'Массив не пустой' 
+//     : 'Массив пустой'   
+    
+
+
+// console.log(isArrayEmpty([]))
+
+    //  Задача 39
+    
+// const arr = ['London', 'Baku','Moscow']
+
+// const cityInfo = (property, index) =>
+//     `${property} at the index ${index} in my array`
+
+// // console.log(cityInfo('london',4))
+
+// const arrLog = arr.forEach((city,index) => console.log(cityInfo(city,index)))
+
+
+
+    // Задача 40
+    
+  
+// const postJson = [
+//     '{"postId": 5266, "commentsQuantity": 7}',
+//     '{"postId": 5000, "commentsQuantity": 8}',
+//     '{"postId": 5216, "commentsQuantity": 11}',
+//     '{"postId": 3166, "commentsQuantity": 15}',
+// ]
+
+
+        // Variant 1
+// const newArr = postJson.map((el) => {
+
+//     return JSON.parse(el)
+
+// })
+
+// console.log(newArr)
+
+
+// console.log(newArr[1].postId)
+
+// console.log(newArr[newArr.length - 1].commentsQuantity)
+
+     // Variant 2 
+
+// const newArr = postJson.map(JSON.parse)
+
+
+// console.log(newArr)
+
+
+// console.log(newArr[1].postId)
+
+// console.log(newArr[newArr.length - 1].commentsQuantity)
+
+
+
+    // Задача 41 
+
+
+// const objFind = [
+//     {postId: 5266, commentsQuantity: 7},
+//     {postId: 5000, commentsQuantity: 8},
+//     {postId: 5216, commentsQuantity: 11},
+//     {postId: 3166, commentsQuantity: 15},
+// ]
+
+
+
+// const objFind2 = objFind.find((post) =>    
+
+//     post.postId === 45447)
+
+// console.log(objFind2)
+
+
+// const objFind = [
+//     {postId: 5266, commentsQuantity: 7},
+//     {postId: 5000, commentsQuantity: 8},
+//     {postId: 5216, commentsQuantity: 11},
+//     {postId: 3166, commentsQuantity: 15},
+// ]
+
+
+// function findPostById (arr, postId){
+//  return  arr.find((element)=>{
+//         return element.postId === postId
+//     })
+// }
+
+// console.log(findPostById(objFind, 3166))
+
+
+    // Задача 43
+    
+// const arr1 = [1,4,6,7]
+
+// const arr2 = [1,4,6,7]
+
+// const arr3 = [5,8,43,7]
+
+    // Variant 1 
+
+// function areArraysEqual (firstArray,seconArray){
+//      if (firstArray.length === seconArray.length && firstArray.every((element,index)=>{
+//        return element === seconArray[index]
+//     })){
+//         return true
+//     }
+
+//     return false
+// }
+
+
+// console.log(areArraysEqual(arr1,arr2))
+
+    // Variant 2
+
+// const areArraysEqual = (firstArray,seconArray) => {
+//     if (firstArray.length === seconArray.length
+//      &&   
+//      firstArray.every((element,index) => element === seconArray[index])){
+//         return true
+//      }
+//      return false
+// }
+// console.log(areArraysEqual(arr1,arr3))
+
+
+    // Задача 44
+
+    // Variant 1
+    
+//  const isElementInArray = (inputArray,searchElement) =>{
+//     if (inputArray.find(element=> element === searchElement 
+//     )){
+//         return true
+//     }
+//     return false 
+//  } 
+
+  const arr = [1,5,6,8,9,10]
+
+//  console.log(isElementInArray(arr,14))
+
+
+    // Variant 2
+    
+    // const isElementInArray = (inputArray,searchElement) =>{
+    //    return inputArray.includes(searchElement) 
+    // }
+
+
+    // console.log(isElementInArray(arr,5))
+    // console.log(isElementInArray(arr,96))
+    // console.log(isElementInArray(arr,8))
+    
