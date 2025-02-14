@@ -741,7 +741,7 @@
 //     return false 
 //  } 
 
-  const arr = [1,5,6,8,9,10]
+//   const arr = [1,5,6,8,9,10]
 
 //  console.log(isElementInArray(arr,14))
 
@@ -756,4 +756,136 @@
     // console.log(isElementInArray(arr,5))
     // console.log(isElementInArray(arr,96))
     // console.log(isElementInArray(arr,8))
+
+
+        // Задача 45
+        
+//       const isElementInArray = (inputArray,searchElement) =>{
+           
+//         if (typeof searchElement !== 'object'){
+//             return inputArray.includes(searchElement)
+//         }
+//            return inputArray.map((element)=> JSON.stringify(element)).includes(JSON.stringify(searchElement))
+//       }
+
+
+//       const arr1 = [
+//       ['dog','animal'],
+//       [1,6,'salam'],
+//       [true,'Vuqar','car']
+//     ]
+
+//     const notObjekt = ['Elsever','Safar',1,7]
+
+//     const ob1 = [
+//         {car: "Hyundai",model: "Sonata"},
+//         {car: "Toyota",model: "Camry"},
+//         {car: "Honda",model: "Honda"}
+//     ]
+
+
+// console.log(isElementInArray(arr1,[1,6,'salam']))
+// console.log(isElementInArray(notObjekt,'Safar'))
+// console.log(isElementInArray(ob1,{model: "Sonata"}))
+
+        // Задача 46 
+
+// const pushNewElement = (inputArray,newElement)=>{
     
+//     if (inputArray.includes(newElement)){
+//         return `Массив содержит такой элемент как ${newElement}` 
+//     }
+//       inputArray.push(newElement)
+
+//       return inputArray
+     
+
+// }
+
+
+// const arr = [1,6,8,9]
+
+// console.log(pushNewElement(arr,9))
+
+// console.log(pushNewElement(arr,52))
+
+// console.log(arr)
+
+    // Задача 47
+
+//     const arrObj = [
+//         {postId: 1552,car: "Hyundai",model: "Sonata",comment: 18},
+//         {postId: 1542,car: "Toyota",model: "Camry",comment: 8},
+//         {postId: 1202,car: "Honda",model: "Honda", comment: 25}
+//     ]
+
+
+//     const popularPostIds = (postsArray,minimalComentsQty)=>{
+//          return postsArray.reduce((postIdsArray,post)=>{
+//            return post.comment > minimalComentsQty ? postIdsArray.concat([post.postId]): postIdsArray}, [] )
+//     }
+    
+
+// console.log(popularPostIds(arrObj,10))
+
+    // задача 48 
+
+    // const arrObj = [
+    //     {category:'Cars', quentity: 18},
+    //     {category: 'Compamies', quentity: 8},
+    //     {category: 'Computers', quentity: 25},
+    //     {category: 'Compamies', quentity: 7},
+    // ]
+
+
+    // const quantitiesByCategories = (productsArray) =>{
+
+    //     return productsArray.reduce((quentityObject,product)=>{
+
+    //         quentityObject[product.category] = (quentityObject[product.category] || 0 ) + product.quentity
+
+    //         return quentityObject
+    //     },{})
+
+    // }
+
+
+    // console.log(quantitiesByCategories(arrObj))
+
+
+
+         // Задача 49
+
+    // const sortedArray = (prodArray)=>{
+
+    //    return [...prodArray].sort((element1,element2)=>{
+    //         return element1.price - element2.price
+    //     })
+    // }
+
+    // const inputProducts = [
+    //     {car:'hyundai', price: 52},
+    //     {car:'toyota', price: 6},
+    //     {car:'honda', price: 100},
+    //     {car:'jiquli', price: 10}
+    // ]
+
+    // console.log(sortedArray(inputProducts))
+
+    // console.log(inputProducts)
+
+
+        // Задача 50
+        
+//    const templateLiteral = (number) =>
+//     `Число ${number} 
+// Это число ${number > 10? 'больше': 'меньше'} 10 
+// также квадратный корень этого числа -${Math.sqrt(number)}`
+         
+
+
+
+//    const num = 2
+
+//    console.log(templateLiteral(num))
+
