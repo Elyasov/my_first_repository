@@ -5,53 +5,240 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
-        .container{
-            margin: 10px 20px;
-            font-family: Arial, Helvetica, sans-serif;    
-            background-color: black;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .header-list{
-            list-style: none;
-            margin-left: 20px;
-        }
-        a {
-            text-decoration: none;
-            color: #fff;
-        }
-        .header-logo{
-            color: #fff;
-        }
-        .header-ul{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-        }
-        .header-nav{
-            margin-right: 50px;
-        }
-
-
-
-    </style>
-
 
 </head>
 <body>
-    <div class="container">
-        <h1 class="header-logo">Logo</h1>
-        <nav class="header-nav">
-            <ul class="header-ul">
-                <li class="header-list"><a href="#" >About us</a></li>
-                <li class="header-list"><a href="#" >Contact</a></li>
-                <li class="header-list"><a href="#" >Info</a></li>
-                <li class="header-list"><a href="#">Click here</a></li>
-            </ul>
-        </nav>
+    <div class="container" id="cont">
+        <p class="paragraph-1">Salam Aleykum</p>
+        <p class="paragraph-2">Salam Aleykum</p>
+        <p class="paragraph-3">Salam Aleykum</p>
+        <button id =btn1>Salam</button>
     </div>
+
+    <form class="form-1">
+        <label for="nums">Telephone</label>
+        <input type="phone" id="nums" placeholder="phone" required>
+        <label for="text">Text</label>
+        <input type="text"id="text"placeholder="text" required>
+        <button type="submit" id="form-button">Click here</button>
+    </form>
+
+<style>
+    #btn1{
+        background-color: white;
+        border-radius: 7px;
+
+    }
+    .form-1{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 250px;
+    }
+
+</style>    
+
+<script>
+
+    // submit form (fetch)
+
+    document.querySelector('.form-1').addEventListener('submit',(event)=>{
+        event.preventDefault()
+        var phone = document.getElementById('nums').value
+        var text = document.getElementById('text').value
+        const allData = {
+            phone:phone,
+            text:text}
+            fetch('https://jsonplaceholder.typicode.com/posts',{
+                method:"POST",
+                headers: {
+                    'Content-Type': 'application/json'},
+                body: JSON.stringify(allData)    
+            })
+            .then((response)=>response.json())
+            .then((data)=>{
+                console.log('Success',data)
+                alert('Uspeshnaya otpravka')
+            }).
+            catch((error)=>{
+                console.log('Error:',error)
+                alert('Otpravka ne proizpshla')
+            })
+    })    
+
+
+
+
+    // Variant - 1
+    
+    
+    // function changeText(){
+    //    var myButton = document.getElementById("btn1")
+    //    var isClicked = false
+    //    if(myButton){
+    //         myButton.addEventListener("click",function(){
+    //             if(!isClicked){
+    //                 document.querySelector(".paragraph-1").innerText = "Salam Vuqar"
+    //                 myButton.innerHTML = "Button is clicked"
+    //                 isClicked = true
+    //             }else {
+    //                 document.querySelector(".paragraph-1").innerText = "Salama Aleykum"
+    //                 myButton.innerHTML = "Salam"
+    //                 isClicked = false
+    //             }
+    //         })
+    //    } 
+   
+    // }
+    // changeText()
+
+
+
+    // Variant - 2
+
+
+
+//     function changeText(){
+//        var myButton = document.getElementById("btn1")
+//        if(myButton){
+//             myButton.addEventListener("click",function(){
+//                 if(myButton.innerHTML === "Salam"){
+//                     document.querySelector(".paragraph-1").innerText = "Salam Vuqar"
+//                     myButton.innerHTML = "Button is clicked"
+//                 }else {
+//                     document.querySelector(".paragraph-1").innerText = "Salam Aleykum"
+//                     myButton.innerHTML = "Salam"
+//                 }
+//             })
+//        } 
+   
+//     }
+
+// changeText()
+
+//     function changeColor(){        
+//         var myButton = document.getElementById('btn1')
+        
+//         myButton.addEventListener('click',()=>{
+//             if(myButton.style.background !== 'black'){
+//                 myButton.style.color = 'white'
+//                 myButton.style.background = 'black'
+                
+//             }else{
+//                 myButton.style.color = ''
+//                 myButton.style.background = ''
+//             }     
+//      })    
+//   }
+// changeColor()
+
+
+function changeTextAllParagraphs(){
+    var myButton = document.getElementById('btn1')
+    var hasNewElement = false
+    mouseOverBtn()
+    if(myButton){
+        myButton.addEventListener('click',()=>{
+            var elements = document.querySelectorAll(".container p")
+            if(myButton.innerText === "Salam"  && myButton.style.background !== 'black'){
+                elements.forEach((element)=>{
+                    element.innerText = "Salam bratkalar necesiniz?"
+                })
+               myButton.innerText = "Button is clicked" 
+               myButton.style.color = 'white'
+               myButton.style.background = 'black'
+               if(!hasNewElement){
+                   creatNewElwithChangeFunc()
+                   hasNewElement =true
+               }
+            }else {
+                elements.forEach((element)=>{
+                    element.innerText = 'Salam Aleykum'
+                })
+                myButton.innerText = 'Salam'
+                myButton.style.color = ''
+                myButton.style.background = ''
+                if(hasNewElement){
+                    removeMyElement()
+                    hasNewElement =false
+                }
+            }
+        })
+    }
+
+}
+
+// changeTextAllParagraphs()
+
+
+function creatNewElwithChangeFunc() {
+    var newEl = document.createElement('p')
+    newEl.textContent = 'Hamiya Salamlar'
+    var parentDiv = document.querySelector('.container')
+    var myBtn = document.getElementById('btn1')
+    parentDiv.insertBefore(newEl,myBtn)
+    
+}
+
+function removeMyElement(){
+    var newEl = document.querySelector('.container p')
+    if (newEl){
+        newEl.remove()
+    }
+}
+
+
+function mouseOverBtn(){
+    var btn = document.getElementById('btn1')
+    var isButtonClicked = false
+
+    btn.addEventListener('click',()=>{
+        isButtonClicked = !isButtonClicked
+    })
+
+    btn.addEventListener('mouseover',()=>{
+        if(!isButtonClicked && btn.style.background !== 'blue'){
+            btn.style.background = 'blue'
+        }
+
+    })
+
+    btn.addEventListener('mouseout',()=>{
+        if(!isButtonClicked){
+            btn.style.background = ''
+        }
+    })
+}
+
+changeTextAllParagraphs()
+
+
+
+
+
+    // Example search first and last child of "container"
+
+    //    var lastChild = document.querySelector(".paragraph-3");
+    //    console.log(lastChild);
+
+    //    var secondParagraph= document.querySelector(".paragraph-2")
+    //    console.log(secondParagraph)
+    
+    // myFirstParagraph.addEventListener('click',function(){
+    //     document.querySelector(".paragraph-1").innerText = "Salam Vuqar"
+    // })
+
+    
+
+
+
+ </script>
 </body>
 </html>
+
+
+
+
+
+
