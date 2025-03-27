@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+<style>
+   
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        font-family: "Open Sans", sans-serif;
+    }
+      body{
+        background-color: black;
+        text-rendering: optimizeLegibility;    
+      }
+      .back-image{
+        background-image: url("https://cdn.pixabay.com/photo/2023/03/05/11/02/burger-7831128_1280.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+      }
+
+     .container{
+        margin: 25px 120px 0px 120px;
+        color: white;
+        
+     }   
+    
+     .header{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+     }   
+     .ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+     }
+     .list a{
+        text-decoration: none;
+        margin-right: 40px;
+        color:grey;
+        opacity: 20px;
+     }
+     .list a:hover{
+        color: white;
+     }
+
+     .btn{
+        background-color: #FF5733;
+        color: white;
+        border-radius: 7px;  
+        transition: transform 0.3s ease
+     }
+     .btn:hover{
+        transform: scale(1.2);
+     }
+     .btn-1{
+        padding: 0px 35px 0px 35px;
+     }
+     .btn-2{
+        padding: 10px 35px 10px 35px;
+        margin-top: 15px;
+     }
+     .welcome{
+        margin-top: 200px;
+     }
+     .second-text{
+        font-size: 50px;
+        margin-top: -18px;
+     }
+     .first-text{
+        color:#D3D3D3;
+     }
+     .third-text{
+        color:#D3D3D3;
+     }
+     .main{
+      height: 1009px;
+     }
+     .main-span{
+        display: block;
+     }
+     .third{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 60px;
+      
+     }
+     .food-card{
+      text-align: center;
+      background-color: #282828;
+      width: 380px;
+      border-radius: 5px;
+      
+     }
+     .food-card img{
+      width: 100%;
+      height: 250px;
+      border-radius: 5px;
+     }
+     .food-info{
+      color:#D0D0D0;
+     }
+     .welcome{
+      margin-top: 300px;
+     }
+     .order{
+      background: linear-gradient(to right, #585858, #1C1C1C);
+      margin-top: 100px;
+
+     }
+     .order-image{
+      background-color: transparent;
+      height: 450px;
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      border: #585858;      
+     }
+     .fourth{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 600px;
+     }
+     .order-btn{
+      display: block;
+     }
+     .order-price2{
+      opacity: 0.8;
+     }
+     .order-price1, .order-price2{
+       color: #FF5733;
+       margin-bottom: 50px;
+
+     }
+     .order-btn{
+      padding: 10px 28px;
+      margin-top: 7px;
+     }
+     .order-title{
+      color: white;
+      font-size: 40px;
+      margin-bottom: initial;
+     }
+     .order-text{
+      color: #D3D3D3
+     }
+     .span-text2{
+      display: block;
+     }
+     .order-info{
+      margin-right: 250px;
+     }
+     .fifth{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding-top: 80px;
+      padding-bottom: 80px;
+      margin-top: 0px;
+     }
+     .my-card1{
+      background-image: url("https://fastly.picsum.photos/id/400/350/230.jpg?hmac=f3S6u64vUnAtvxpchJaK58wAkCzO-7S9sAwZilD6B1Q" 
+);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 700px;
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      
+  }
+  .my-card2{
+      background-image: url("https://fastly.picsum.photos/id/717/350/230.jpg?hmac=bMA7aU5B3iRj98KUHpgLCZRYcJffh0O83QM_DmFkCFs" 
+);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 700px;
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      
+  }
+  .my-card3{
+      background-image: url("https://fastly.picsum.photos/id/666/350/230.jpg?hmac=5GeSfuvNeuhfDRiHoVINxUsAWemw_BYzCQW6coZbEVM" 
+);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 700px;
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      
+  }
+  .my-card4{
+      background-image: url("https://fastly.picsum.photos/id/765/350/230.jpg?hmac=zfIs7POypkapZhpe99OKBzyhgvyfuaiH_vXIowrGkh4" 
+);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 700px;
+      height: 320px;
+      position: relative;
+      overflow: hidden;
+      margin-top: 20px;
+      
+  }
+.cards{
+   background: linear-gradient(to right, #2c2c2c, #1a1a1a);
+   margin-top: 0px;
+}
+.my-card{
+   box-sizing: border-box;
+   padding: 50px 0px 50px 270px;
+
+}
+.my-card:nth-child(even){
+   padding-left: 20px;
+   padding-right:  250px;
+}
+.six{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+   align-items: center;
+   height: 100%;
+}
+.autor{
+   height: 550px;
+   align-items: center;
+   text-align: center;
+   background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+
+}
+.autor-text::before{
+   content: url('https://cdn-icons-png.flaticon.com/128/11447/11447211.png');
+   display: block;
+   /* filter: invert(1) sepia(2) saturate(5) hue-rotate(180deg); */
+
+}
+.autor-info{
+   text-align: center;
+   align-items: center;
+   flex-wrap: wrap;
+   max-width: 500px;
+   margin-left: 130px;
+}
+.autor-text, .autor-span{
+   color: #D0D0D0;
+}
+.autor-name{
+   margin-bottom: 3px;
+}
+.autor-image{
+   margin-right: 45px;
+}
+.download{
+   background-color: #585858;
+   height: 170px;
+}
+.seven{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   text-align: center;
+   height: 100%;
+}
+.download-text{
+   color: #D0D0D0;
+   font-size: 28px;
+}
+.download-btn{
+   color: #D0D0D0;
+   padding: 8px 20px 8px 20px;
+}
+
+
+
+</style>    
+</head>
+<body>
+  <div class="back-image">
+   <div class="first container">
+        <header class="header">
+            <p class="logo">LOGO</p>
+            <nav class="navigation">
+                <ul class="ul">
+                    <li class="list"><a href="">HOME</a></li>
+                    <li class="list"><a href="">PAGES</a></li>
+                    <li class="list"><a href="">OUR OFFERS</a></li>
+                    <li class="list"><a href="">PRICING</a></li>
+                    <li class="list"><a href="">SHOP</a></li>
+                </ul>
+            </nav> 
+            <button class ="btn btn-1">ORDER NOW</button>
+        </header>
+    </div>
+       <main class="main">
+            <section class="welcome">
+               <div class="container">
+                  <p class="first-text">FAST FOOD BURGERS</p>
+                  <h1 class="second-text">The fastest food, for <span class="main-span">Instant hunger.</span></h1>
+                  <p class="third-text">Somed food has looked so awful it's looked like something <br>
+                  that the dog's brought home,yet after one mouthful i've been left<br>
+                  eating my thoughts,my words & my food and gone back for<br>seconds.   
+                  </p>
+                  <button class="btn btn-2">ORDER NOW</button>
+                </div>
+            </section>  
+   </div>  
+   <section class="food-section">
+      <div class="third container">
+         <div class="food-card">
+            <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcLvX0IsWe-ptsO68DWPztWsVT5xBr-IaPjt46z8LfzJHHVualj0utZamWhr8j-TzEtQ&usqp=CAU" alt="">
+            <h3 class="food-name">Chicken Paella</h3>
+            <p class="food-info">
+               We just don't make and sell food.<br>Good food, warm.
+            </p>
+         </div>
+      <div class="food-card">
+         <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-_EGxW951HDt2U2EnMaadLY8_N3zTMdndpwjgQ1LotAfLYmUWTHWjr_9HA6B5OIAljl4&usqp=CAU" alt="">
+         <h3 class="food-name">Taco Del Mar</h3>
+         <p class="food-info">We just don't make and sell food.<br>Good food, warm.</p>
+      </div>
+      <div class="food-card">
+         <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREcLvX0IsWe-ptsO68DWPztWsVT5xBr-IaPjt46z8LfzJHHVualj0utZamWhr8j-TzEtQ&usqp=CAU" alt="">
+         <h3 class="food-name">Bon Au Pain</h3>
+         <p class="food-info">We just don't make and sell food.<br>Good food, warm.</p>
+      </div>
+      <div class="food-card">
+         <img class="food-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBfR4Vipp0dxriBhKL3VorUlCdPAF-OHeA9GS35DNXNjRgex4kfIDTHK3PQ4S-oxAh0s&usqp=CAU" alt="">
+         <h3 class="food-name">Pizza Hut</h3>
+         <p class="food-info">We just don't make and sell food.<br>Good food, warm.</p>
+      </div>
+    </div> 
+    <section class="order">
+      <div class="fourth container">
+         <img class="order-image" src="https://fastly.picsum.photos/id/500/800/500.jpg?hmac=7z8hgyfIonExB_Ql8-nr_0ar_ZR9wAhuw-OR9MJ2wN0" alt="">
+         <div class="order-info">
+            <h4 class="order-title">Burger King</h4>
+            <p class="order-text">Together with Mcdonald's Burger king has grown <span class="span-text2">to become synonymous with burgers in the US.</span></p>
+            <span class="order-price1">$6</span>
+            <span class="order-price2">$5</span>
+            <button class="btn order-btn">ORDER NOW</button>
+           </div>
+         </div>
+      </section>
+      <section class="cards">
+         <div class="fifth container">
+               <div class="my-card1 my-card">
+                  <div class="cards-info">
+                     <h3 class="order-title">Papa John's</h3>
+                     <p class="order-text">Together with Mcdonald's Burger king has grown <span class="span-text2">to become synonymous with burgers in the US.</span></p>
+                     <span class="order-price1">$6</span>
+                     <span class="order-price2">$5</span>
+                     <button class="btn order-btn">ORDER NOW</button>
+                  </div>
+               </div>
+               <div class="my-card2 my-card">
+                  <div class="cards-info">
+                     <h3 class="order-title">Big Tasty</h3>
+                     <p class="order-text">Together with Mcdonald's Burger king has grown <span class="span-text2">to become synonymous with burgers in the US.</span> </p>
+                     <span class="order-price1">$6</span>
+                     <span class="order-price2">$5</span>
+                     <button class="btn order-btn">ORDER NOW</button>
+                  </div>
+               </div>
+            
+         
+               <div class="my-card3 my-card">
+                  <div class="cards-info">
+                     <h3 class="order-title">Pizza HUt</h3>
+                     <p class="order-text">Together with Mcdonald's Burger king has grown <span class="span-text2">to become synonymous with burgers in the US.</span> </p>
+                     <span class="order-price1">$6</span>
+                     <span class="order-price2">$5</span>
+                     <button class="btn order-btn">ORDER NOW</button>
+                  </div>
+               </div>
+               <div class="my-card4 my-card">
+                  <div class="cards-info">
+                     <h3 class="order-title">Bon Au Pain</h3>
+                     <p class="order-text">Together with Mcdonald's Burger king has grown <span class="span-text2">to become synonymous with burgers in the US.</span></p>
+                     <span class="order-price1">$6</span>
+                     <span class="order-price2">$5</span>
+                     <button class="btn order-btn">ORDER NOW</button>
+                  </div>
+               </div>
+         </div>
+      </section>
+      <section class="autor">
+         <div class="six container">
+            <img class="autor-image" src="https://fastly.picsum.photos/id/857/400/350.jpg?hmac=TmQEiRsklhT-HKnC6LFwgV3621e33SlUZ1h9yyHvQrw" alt="">
+            <blockquote class="autor-info">
+               <p class="autor-text">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et a animi ratione, consectetur officiis consequatur quia architecto voluptatibus doloremque ipsum?
+               </p>
+               <h3 class="autor-name">Adele A.McNeill</h3>
+               <span class="autor-span">Amirican</span>
+            </blockquote>
+         </div>
+      </section>
+      
+      <section class="download">
+         <div class="seven container">
+            <h2 class="download-text">Download Our Menu</h2>
+            <button class="download-btn btn">Download</button>
+         </div>
+      </section>
+   </main> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </body>
+</html>       
