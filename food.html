@@ -17,7 +17,9 @@
     }
       body{
         background-color: black;
-        text-rendering: optimizeLegibility;    
+        text-rendering: optimizeLegibility;
+        margin: 0;
+        padding: 0;
       }
       .back-image{
         background-image: url("https://cdn.pixabay.com/photo/2023/03/05/11/02/burger-7831128_1280.jpg");
@@ -33,10 +35,14 @@
       }
 
      .container{
-        margin: 25px 120px 0px 120px;
+        margin: 0px 120px 0px 120px;
         color: white;
         
      }   
+
+     .first{
+      margin-top: 15px;
+     }
     
      .header{
         display: flex;
@@ -48,6 +54,7 @@
         justify-content: space-between;
         list-style-type: none;
         align-items: center;
+
      }
      .list a{
         text-decoration: none;
@@ -91,9 +98,12 @@
      .main{
       height: 1009px;
      }
+
      .main-span{
-        display: block;
+        
+      display: block;
      }
+
      .third{
       display: flex;
       justify-content: space-between;
@@ -176,8 +186,9 @@
       gap: 20px;
       padding-top: 80px;
       padding-bottom: 80px;
-      margin-top: 0px;
+      margin-top: 0;
      }
+
      .my-card1{
       background-image: url("https://fastly.picsum.photos/id/400/350/230.jpg?hmac=f3S6u64vUnAtvxpchJaK58wAkCzO-7S9sAwZilD6B1Q" 
 );
@@ -253,6 +264,7 @@
    background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
 
 }
+
 .autor-text::before{
    content: url('https://cdn-icons-png.flaticon.com/128/11447/11447211.png');
    display: block;
@@ -287,13 +299,88 @@
    height: 100%;
 }
 .download-text{
-   color: #D0D0D0;
-   font-size: 28px;
+   color: white;
+   font-size: 35px;
 }
 .download-btn{
-   color: #D0D0D0;
-   padding: 8px 20px 8px 20px;
+   color:whitesmoke;
+   padding: 10px 33px 10px 33px;
 }
+.footer{
+   background: linear-gradient(to bottom, #2c2c2c, #1a1a1a);
+}
+.eight{
+   display: flex;
+   justify-content: space-between;
+   height: 340px;
+   text-align: center;
+   align-items: center;  
+}
+
+.list-titles{
+   display: flex;
+   justify-content: space-between;
+   width: 650px;
+   padding: 0;
+}
+
+a{
+   text-decoration: none;
+   color: grey;
+}
+li{
+   list-style: none;
+}
+
+.list-title{
+   text-align: left;
+   font-size: 18px;
+   line-height: 34px;
+}
+
+.list-item a:hover {
+   color: aliceblue;
+}
+.list-item a {
+   line-height: 30px;
+   font-size: 14px;
+}
+.web-link{
+   display: block;
+   line-height: 33px;
+}
+.web-link:hover{
+   color: aliceblue;
+}
+
+.my-links{
+   text-align: left;
+}
+
+
+.my-logo{
+   margin-bottom: 18px;
+}
+.first-site::before{
+   content: url('https://fastly.picsum.photos/id/575/20/16.jpg?hmac=ydUZbiSSBRI97TQxPxU_dDQl2AV01gdt1ybRc6Pa39I');
+   margin-right: 9px;
+}
+.second-site::before{
+   content: url('https://fastly.picsum.photos/id/663/20/16.jpg?hmac=Gk9zGDImr03SjKQm0YJb0lp3hxlhCfcH_9nvsgmzp-0');
+   margin-right: 9px;
+}
+
+.ul-for-list-item{
+   padding-left: 0;
+}
+.social-apps{
+   text-align: left;
+   height: 148px;
+}
+.social-links a {
+   margin-right: 3px;
+}
+
 
 
 
@@ -424,26 +511,58 @@
       <section class="download">
          <div class="seven container">
             <h2 class="download-text">Download Our Menu</h2>
-            <button class="download-btn btn">Download</button>
+            <button class="download-btn btn">DOWNLOAD</button>
          </div>
       </section>
    </main> 
 
+   <footer class="footer">
+      <div class="eight container">
 
+         <div class="my-links">
+            <img class="my-logo" src="https://fastly.picsum.photos/id/230/50/40.jpg?hmac=-OvtLBxBsj4Nk6FcKH-EoXVxSug8fP8e1HxxbWGq06o" alt="">
+            <a class="first-site web-link" href="mailto:vugar.elyasov@bk.ru">fastfood_usa@gmail.com</a>
+            <a class="second-site web-link" href="">www.fastfood.usa.com</a>
+         </div>
 
+         <nav class="nav-list">
+            <ul class="list-titles" >
+               <li class="list-title"> Our Menu
+                  <ul class="ul-for-list-item" >
+                     <li class="list-item" ><a href="">Breakfast</a></li>
+                     <li class="list-item" ><a href="">Lunch</a></li>
+                     <li class="list-item" ><a href="">Dinner</a></li>
+                  </ul>
+               </li>
 
+               <li class="list-title">Information
+                  <ul class="ul-for-list-item" >
+                     <li class="list-item" ><a href="">About us</a></li>
+                     <li class="list-item" ><a href="">Testmonial</a></li>
+                     <li class="list-item" ><a href="">Event</a></li>
+                  </ul>
+              </li>
 
+               <li class="list-title">Useful Links
+                  <ul class="ul-for-list-item" >
+                     <li class="list-item" ><a href="">Services</a></li>
+                     <li class="list-item" ><a href="">Support</a></li>
+                     <li class="list-item" ><a href="">Conditions</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
 
-
-
-
-
-
-
-
-
-
-
-
+         <div class="social-apps">
+            <p class="social-text" >Social Handles</p>
+            <div class="social-links" >
+               <a href=""><img src="https://fastly.picsum.photos/id/258/21/14.jpg?hmac=XgGc4AOz3AksD6yncoFF5WLPfED3pkRQaGaYUTuUO4U" alt=""></a>
+               <a href=""><img src="https://fastly.picsum.photos/id/796/21/14.jpg?hmac=cTe8y5slSdcZVO2C5_ZEwbu2Oc9exa8Eyc3H9ZJIlRY" alt=""></a>
+               <a href=""><img src="https://fastly.picsum.photos/id/908/21/14.jpg?hmac=L-uv975BZFOfVkMwp64kyublY55cBXzDZxyHzeAf5eA" alt=""></a>
+               <a href=""><img src="https://fastly.picsum.photos/id/19/21/14.jpg?hmac=B2m6si3Qr62EaT4FWWzpJQlGI9Y801noSITzVbOQvTw" alt=""></a>
+            </div>
+         </div>
+      </div>
+   </footer>
  </body>
 </html>       
