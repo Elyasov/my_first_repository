@@ -397,6 +397,7 @@ li{
                     <li class="list"><a href="">PAGES</a></li>
                     <li class="list"><a href="">OUR OFFERS</a></li>
                     <li class="list"><a href="#pricing">PRICING</a></li>
+                    <li class="list"><a href="#pricing">PRICING</a></li>
                     <li class="list"><a href="">SHOP</a></li>
                 </ul>
             </nav> 
@@ -440,6 +441,9 @@ li{
          <h3 class="food-name">Pizza Hut</h3>
          <p class="food-info">We just don't make and sell food.<br>Good food, warm.</p>
       </div>
+    </div>  
+     
+    <section class="order" id="pricing">
     </div>  
      
     <section class="order" id="pricing">
@@ -518,6 +522,8 @@ li{
    </main> 
    <!-- <div class=""></div>  prosto dlya testa dobavil div-->
 
+   <!-- <div class=""></div>  prosto dlya testa dobavil div-->
+
    <footer class="footer">
       <div class="eight container">
 
@@ -526,6 +532,9 @@ li{
             <a class="first-site web-link" href="mailto:vugar.elyasov@bk.ru">fastfood_usa@gmail.com</a>
             <a class="second-site web-link" href="">www.fastfood.usa.com</a>
          </div>
+
+   
+
 
 
 
@@ -571,6 +580,19 @@ li{
          </div>
       </div>
    </footer>
+
+   <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+   </script>
+</body>
 
    <script>
       document.querySelectorAll('a[href^="#"]').forEach(anchor => {
