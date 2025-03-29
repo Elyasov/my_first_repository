@@ -396,7 +396,7 @@ li{
                     <li class="list"><a href="">HOME</a></li>
                     <li class="list"><a href="">PAGES</a></li>
                     <li class="list"><a href="">OUR OFFERS</a></li>
-                    <li class="list"><a href="">PRICING</a></li>
+                    <li class="list"><a href="#pricing">PRICING</a></li>
                     <li class="list"><a href="">SHOP</a></li>
                 </ul>
             </nav> 
@@ -440,8 +440,9 @@ li{
          <h3 class="food-name">Pizza Hut</h3>
          <p class="food-info">We just don't make and sell food.<br>Good food, warm.</p>
       </div>
-    </div> 
-    <section class="order">
+    </div>  
+     
+    <section class="order" id="pricing">
       <div class="fourth container">
          <img class="order-image" src="https://fastly.picsum.photos/id/500/800/500.jpg?hmac=7z8hgyfIonExB_Ql8-nr_0ar_ZR9wAhuw-OR9MJ2wN0" alt="">
          <div class="order-info">
@@ -515,6 +516,8 @@ li{
          </div>
       </section>
    </main> 
+   <!-- <div class=""></div>  prosto dlya testa dobavil div-->
+
 
    <footer class="footer">
       <div class="eight container">
@@ -524,6 +527,9 @@ li{
             <a class="first-site web-link" href="mailto:vugar.elyasov@bk.ru">fastfood_usa@gmail.com</a>
             <a class="second-site web-link" href="">www.fastfood.usa.com</a>
          </div>
+
+   
+
 
          <nav class="nav-list">
             <ul class="list-titles" >
@@ -564,5 +570,17 @@ li{
          </div>
       </div>
    </footer>
- </body>
+
+   <script>
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+   </script>
+</body>
 </html>       
