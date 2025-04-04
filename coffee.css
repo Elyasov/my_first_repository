@@ -1,10 +1,26 @@
 
 
+/* First section -Header */
+
     * {
         font-family: sans-serif;
         font-size: 16px;
         background-color: black;
         color: white;
+        letter-spacing: -0.03em;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-weight: 800;
+        line-height: 53px;
     }
 
     .container{
@@ -25,7 +41,7 @@
         gap: 150px;
     }
     .header-logo{
-        font-size: 45px;
+        font-size: 41px;
     }
 
     .header-link{
@@ -54,7 +70,53 @@
         background: transparent;
     }
 
+    /* Second section - Welcome */
 
+    .welcome-title{
+        font-size: 52px;
 
+    }
+    .welcome-span{
+        font-size: 52px;
+    }
 
+    .welcome-btns{
+        display: flex;
+        gap: 20px;
+    }
 
+    .btn {
+        color: white;
+        padding: 13px 50px 13px 50px;
+        border-radius: 20px;
+    }
+
+    .btn1{
+        background: linear-gradient(to right, #80e27e, #00695c);
+    }
+
+    .btn2{
+        background-color: black;
+        border: 1px solid white; 
+    }
+    
+    .stat-text span {
+        font-size: 35px;
+    }
+
+    .stat-span::after{
+        content: "+";
+        color: #80e27e;
+    }
+
+    .welcome-btns{
+        margin-bottom: 20px;
+    }
+    .welcome-stats{
+        width: 100px;
+        display: flex;
+        gap: 40px;
+    }
+    .welcome-text{
+        margin-bottom: 40px;
+    }
