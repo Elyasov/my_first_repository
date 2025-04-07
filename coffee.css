@@ -104,6 +104,10 @@
         font-size: 35px;
     }
 
+    .welcome-text, .stat-text{
+        color: lightgrey;
+    }
+
     .stat-span::after{
         content: "+";
         color: #80e27e;
@@ -119,4 +123,15 @@
     }
     .welcome-text{
         margin-bottom: 40px;
+        width: 440px;
+        font-size: 17px;
     }
+    .welcome .container{
+        height: 500px;
+        display: flex;
+    }
+    .welcome-info{
+        width: 410px;
+        height: 100%;
+    }
+  
