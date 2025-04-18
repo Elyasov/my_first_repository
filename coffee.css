@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 p {
     font-size: 20px;
 }
@@ -99,15 +103,23 @@ h2 {
     color: white;
     padding: 13px 50px 13px 50px;
     border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    
 }
 
 .btn1 {
     background: linear-gradient(to right, #80e27e, #00695c);
 }
 
+
+
 .btn2 {
     background-color: black;
-    border: 1px solid white;
+    border: 1px solid white; 
 }
 
 .stat-text span {
@@ -353,6 +365,11 @@ h2 {
     align-items: center;
     justify-content: center;
     line-height: 37px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-item:hover {
+    transform: scale(1.1);
 }
 
 .cards {
@@ -454,6 +471,7 @@ h2 {
  
  .events {
     margin-top: 80px;
+    margin-bottom: 50px;
  }
 
  .events-desc {
@@ -484,6 +502,7 @@ h2 {
 
  .event-item-title {
     text-transform: uppercase;
+    color: #D3D3D3;
  }
 
  .first-back {
@@ -522,3 +541,161 @@ h2 {
                           "third fourth fourth fifth";  
     gap: 30px;
  }
+
+ .event-item {
+    border-radius: 20px;
+    padding-left: 48px;
+    padding-top: 38px;
+}
+ 
+.event-btn {
+    margin-top: 10px;
+    display: inline-block;
+}
+
+/*Section - Contacts  */
+
+
+
+.contacts {
+    background: linear-gradient(to bottom, #3a3a3a, #1f1f1f); 
+}
+
+
+.contact-container-image::before {
+    content: "";
+    background: linear-gradient(to right, #80e27e, #00695c);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.contact-container-image::after {
+    content: " ";
+    border-radius: 50%;
+    background: linear-gradient(to right, #80e27e, #00695c);
+    position: absolute;
+    top: 35px;
+    left: 15px;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+}
+
+
+.contact-container-image {
+    height: 420px;
+    position: relative;
+}
+.contact-image {
+    width: 100%;
+    height: 100%;
+    box-shadow: -14px 26px 65px 0 rgba(0, 0, 0, 0.39)
+}
+
+.contact-title {
+    font-size: 60px;
+    width: 380px;
+    margin-top: 0;
+    margin-bottom: 55px;
+    font-weight: 800px;
+    line-height: 65px;
+}
+
+.contact-info {
+    width: 500px;
+}
+
+.contact-text {
+    width: 325px;
+    margin: 0 0 30px 0;
+    font-size: 18px;
+    color: #D3D3D3;
+    line-height: 25px;  
+}
+
+.contacts .container {
+    display: flex;
+    height: 650px;
+    gap: 390px;
+    padding-top: 135px;
+}
+
+.contact-nums {
+    height: 30px;
+}
+
+.conctact-number {
+    font-size: 25px;
+    position: relative;
+    padding-left: 50px;
+}
+
+.conctact-number::before {
+    content: "";
+    background: url("http://picsum.photos/id/20/30");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21px;
+    height: 28px;
+}
+
+.contact-span {
+    font-weight: 800;
+    font-size: 60px;
+}
+
+
+/* Section - Footer*/
+
+
+.footer-section {
+    background: linear-gradient(to bottom, #2d2d2d, #141414);
+    height: 300px;
+    padding-top: 20px;
+}
+
+
+.footer-section .container {
+    display: flex;
+    gap: 190px;
+}
+
+.navigation-ul {
+    display: flex;
+    gap: 120px;
+
+}
+
+.navigation-list {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.footer-inner-ul {
+    padding: 5px 0 0 0;
+}
+
+.footer-inner-ul li a {
+    color: #A9A9A9 ;
+    font-size: 17px;
+    line-height: 30px;
+}
+
+.footer-logo {
+    font-weight: 700;
+}
+
+
+.footer-inner-ul li a:hover{
+    color: white;
+}
+
+.footer-section {
+    height: 200px;
+    padding-top: 25px;
+}
