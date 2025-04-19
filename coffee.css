@@ -54,6 +54,21 @@ h2 {
     font-size: 41px;
 }
 
+.header-logo::before {
+    content: "";
+    border-radius: 100%;
+    width: 450px;
+    height: 270px;
+    background: linear-gradient(45deg, rgba(0,255,0,0.2), rgba(0,128,0,0.2));  
+    filter: blur(52px);
+    position: absolute;
+    left: 220px;
+    top: 50px;
+    display: block;
+    z-index: -5;
+}
+
+
 .header-link {
     text-decoration: none;
 }
@@ -103,16 +118,19 @@ h2 {
     color: white;
     padding: 13px 50px 13px 50px;
     border-radius: 20px;
-    transition: transform 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease;
 }
 
 .btn:hover {
-    transform: scale(1.1);
-    
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
 }
 
 .btn1 {
     background: linear-gradient(to right, #80e27e, #00695c);
+}
+
+.cards-btn:hover {
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
 }
 
 
@@ -357,6 +375,7 @@ h2 {
 .cards-btn {
     background: linear-gradient(to right, #80e27e, #00695c);
     padding: 13px 60px 13px 60px;
+    transition: box-shadow 0.3s ease;
 }
 
 .card-item {
@@ -370,6 +389,7 @@ h2 {
 
 .card-item:hover {
     transform: scale(1.1);
+    box-shadow: 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
 }
 
 .cards {
@@ -699,3 +719,4 @@ h2 {
     height: 200px;
     padding-top: 25px;
 }
+
