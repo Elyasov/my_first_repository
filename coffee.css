@@ -44,10 +44,94 @@ h2 {
     color: transparent;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+.header-nav {
+    display: flex;
+    gap: 65px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff; /* Цвет текста */
+    background-color: #333; /* Цвет фона */
+    padding: 10px 15px;
+    display: block;
+    width: 150px; /* Желаемая ширина */
+    text-align: center;
+    border-radius: 4px 4px 0 0;
+    margin-left: 0;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333; /* Тот же фон, что и у .header-link */
+    flex-direction: column;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 100%;
+}
+
+.dropdown-menu a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #fff; /* Цвет текста как у .header-link */
+    display: block;
+    text-align: center;
+    background-color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-menu a:hover,
+.header-link:hover {
+    background-color: #555; /* При ховере немного темнее */
+}
+
+/* Показываем меню при ховере */
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .header .container {
     display: flex;
     align-items: center;
-    gap: 150px;
+    gap: 200px;
 }
 
 .header-logo {
@@ -80,7 +164,7 @@ h2 {
 .header-link {
     font-size: 20px;
     color: #888888;
-    margin-left: 100px;
+    
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1);
 
 }
