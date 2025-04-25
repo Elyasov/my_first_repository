@@ -42,7 +42,7 @@ h2 {
     flex-direction: column;
     width: 350px;
     gap: 50px;
-    padding: 5px;
+    padding: 5px 10px 5px 10px;
 }
 
 .menu-container {
@@ -81,8 +81,12 @@ h2 {
 
 .menu-item {
     padding: 0 10px;
+}
+
+.menu-item + .menu-item {
     margin-bottom: 30px;
 }
+
 
 .menu_title_href {
     display: inline-flex;
@@ -101,3 +105,35 @@ svg {
     opacity: 0.5;
 }
 
+.user-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 8px;
+    border: none;
+    padding: 8px;
+    width: 95%;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out 
+}
+
+.user-btn:hover {
+    background-color: #eaeef3; /* очень светлый прозрачный серый */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* лёгкая тень */
+}
+
+.user {
+    padding: 5px 10px;
+}
+
+.user-span {
+    padding-left: 10px;
+}
+
+.name-span {
+    padding-right: 100px;
+}
+
+.menu-wrapper {
+    overflow-y: scroll;
+    max-height: 90vh;
+}
