@@ -6,6 +6,8 @@
     font-family: sans-serif;
 }
 
+
+
 a {
     text-decoration: none;
     color: black;
@@ -19,6 +21,11 @@ img {
     max-height: 100%;
 }
 
+h1 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
 h2 {
     font-size: 16px;
     font-weight: 500;
@@ -26,6 +33,8 @@ h2 {
 
 .all-content {
     width: 100%;
+    display: flex;
+    gap: 0;
 }
 
 
@@ -40,7 +49,7 @@ h2 {
 .menu-bar {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    width: 250px;
     gap: 20px;
     height: 100vh;
 
@@ -133,8 +142,8 @@ svg {
     padding-left: 10px;
 }
 
-.name-span {
-    padding-right: 100px;
+.user-btn  svg {
+    margin-left: 25px;
 }
 
 .menu-wrapper {
@@ -142,3 +151,124 @@ svg {
     max-height: 90vh;
     padding: 5px 7px 5px 7px;
 }
+
+.item-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* welcome -section */
+
+.main {
+    height: 100%;
+    width: 100%;
+}
+
+.welcome-container {
+    padding: 55px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow: hidden;
+    gap: 30px;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.welcome {
+    height: auto;
+    background: aliceblue;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+
+.header-btn {
+    border: none;
+    background: none;
+}
+
+
+.create-btn {
+    background-color: black;
+    color: white;
+    gap: 13px;
+    padding: 10px 8px;
+    border: none;
+    transition: box-shadow 0.2s ease-in-out;
+    background-color: black;
+}
+
+.create-btn:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.create-btn > svg {
+    width: 18px;
+    height: 16px;
+    color: white;
+    font-weight: 400;
+}
+
+.welcome-title {
+    margin-bottom: 7px;
+}
+
+.export-btn {
+    padding: 7px 13px;
+    background-color: white;
+    border: 1px solid #d3d3d3;
+    gap: 13px;
+    color: black;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out ;
+}
+
+
+
+.export-btn > svg{
+    width: 17px;
+    height: 15px;
+}
+
+.export-btn:hover {
+    background-color: #eaeef3; /* очень светлый прозрачный серый */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* лёгкая тень */
+}
+
+
+.welcome-dollar-icon {
+        width: 53px;
+        height: 53px;
+        border: 1px solid lightblue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 128, 0, 0.1) ;
+        border: 1px solid #cceccc; /* светло-зелёный бордер */  
+        background: #eaf4ff;
+}
+
+.welcome-dollar-icon > svg {
+    color: #0f3d2e;
+}
+
+.welcome-text {
+    color: #636363;
+    font-weight: 200;
+}
+
+
