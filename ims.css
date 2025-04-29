@@ -6,7 +6,9 @@
     font-family: sans-serif;
 }
 
-
+body {
+    height: 100vh;
+}
 
 a {
     text-decoration: none;
@@ -35,6 +37,8 @@ h2 {
     width: 100%;
     display: flex;
     gap: 0;
+    height: 100vh;  /* Устанавливаем высоту контейнера на весь экран */
+    overflow: hidden;
 }
 
 
@@ -52,7 +56,6 @@ h2 {
     width: 250px;
     gap: 20px;
     height: 100vh;
-
 }
 
 
@@ -163,6 +166,7 @@ svg {
 .main {
     height: 100%;
     width: 100%;
+    overflow-y: auto;
 }
 
 .welcome-container {
@@ -184,6 +188,7 @@ svg {
 .welcome {
     height: auto;
     background: aliceblue;
+    margin-top: 17px;
 }
 
 .btn {
@@ -197,6 +202,12 @@ svg {
 .header-btn {
     border: none;
     background: none;
+    transition: backround 0.3s ease-in-out;
+    padding: 5px;
+}
+
+.header-btn:hover {
+    background: #e0e0e0;
 }
 
 
@@ -204,7 +215,7 @@ svg {
     background-color: black;
     color: white;
     gap: 13px;
-    padding: 10px 8px;
+    padding: 9px 10px;
     border: none;
     transition: box-shadow 0.2s ease-in-out;
     background-color: black;
@@ -229,7 +240,7 @@ svg {
 .export-btn {
     padding: 7px 13px;
     background-color: white;
-    border: 1px solid #d3d3d3;
+    border: 0.5px solid #d3d3d3;
     gap: 13px;
     color: black;
     font-weight: 600;
@@ -271,4 +282,121 @@ svg {
     font-weight: 200;
 }
 
+
+/* Form - section */
+
+.form-container {
+    padding: 40px 50px;
+}
+
+.form_label_inputs > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form_label_inputs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+}
+
+label {
+    padding-left: 5px;
+}
+
+input {
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 7px ;
+    box-sizing: border-box;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 10px 3px rgba(105, 105, 105, 0.8);
+}
+
+.submit-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 0.5px solid #f0f0f0;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 35px;
+}
+
+.form-button-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.sumbit-btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 15px 10px 23px;
+    transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out ;
+}
+
+
+.filter-btn{
+    padding: 8px 28px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #f0f0f0;
+}
+
+.filter-btn:hover {
+    background-color: #eaeef3; /* очень светлый прозрачный серый */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* лёгкая тень */
+}
+
+
+.form-data-table {
+    width: 100%;
+    border: 0.5px solid #f0f0f0;
+    border-radius: 4px;
+}
+
+tr.head-row th{
+    text-align: left;
+    color: gray;
+    font-weight: 400;
+    padding: 16px 18px;
+    width: 6%;
+}
+
+tr.head-row th:last-child {
+    text-align: right;
+    color: gray;
+    font-weight: 400;
+    padding: 16px 18px;
+}
+
+
+table {
+    border-collapse: collapse;
+  }
+
+.head-row {
+    border-bottom: 0.5px solid #f0f0f0;
+ }
+
+.table {
+    width: 100%;
+}
+
+.head-row:last-child {
+    text-align: right;
+}
+
+.row-item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
