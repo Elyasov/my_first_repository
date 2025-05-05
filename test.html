@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/test.css">
+</head>
+<body>
+   
+    
+    <div class="container">
+        <blockquote cite="https://example.com/article">
+        <p>
+            Всё, что нас не убивает, делает нас сильнее.
+        </p>
+        </blockquote>
+
+
+      <p>
+        <cite>Преступление и наказание</cite> — роман Ф.М. Достоевского.
+    </p>
+
+
+      <address>
+        Написано <a href="mailto:webmaster@example.com">вебмастером</a><br>
+        ул. Ленина, 10, Москва, Россия
+      </address>
+      
+      <dialog id="myDialog">
+        <p>
+            Это модальное окно
+        </p>
+        <button id="close-dialog">Закрыть</button>
+      </dialog>
+      <button id="open-dialog">Открыть</button>
+      
+
+      <details>
+        <summary>Что такое HTML?</summary>
+        <p>
+            HTML — это язык разметки для создания веб-страниц.
+        </p>
+      </details>
+      
+
+      <aside>
+        <h2>О авторе</h2>
+        <p>
+            Анна — разработчик с 10-летним опытом.
+        </p>
+      </aside>
+      
+
+
+      <article>
+        <h2>Новая статья</h2>
+        <p>
+            Контент статьи...
+        </p>
+      </article>
+      
+
+      <p>
+        Найдено: <mark>HTML</mark>
+    </p>
+
+
+
+      <time datetime="2025-05-05">5 мая 2025</time>
+
+
+
+      <form>
+        <fieldset>
+          <legend>Контактные данные</legend>
+          <label>Email: <input type="email" name="email"></label><br>
+          <label>Телефон: <input type="tel" name="phone"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Контактные данные</legend>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Телефон: <input type="tel" name="phone"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Контактные данные</legend>
+            <label>Email: <input type="email" name="email"></label><br>
+            <label>Телефон: <input type="tel" name="phone"></label>
+          </fieldset>
+
+          <fieldset>
+            <label for="comment">Комментарий:</label><br>
+  <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Введите ваш отзыв..."></textarea>
+          </fieldset>
+      </form>
+    </div>   
+
+</body>
+
+<script>
+
+    const items = document.querySelectorAll('.container');
+    items.forEach((el, index) => {
+      el.style.animationDelay = `${index * 0.5}s`;
+    });
+  
+</script>
+</html>

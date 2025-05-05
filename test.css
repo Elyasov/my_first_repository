@@ -1,0 +1,113 @@
+
+/* 
+body > * {
+    animation: fadeIn 0.3s ease-in-out forwards;
+
+} */
+
+/* blockquote {
+    animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+dialog{
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+form {
+    animation: fadeIn 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%,-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+   */
+
+
+
+ :root{
+    --animationForCont:  fadeIn 1.0s ease forwards;
+}
+
+
+.container {
+    opacity: 0;
+    animation: var(--animationForCont);
+    aspect-ratio: 1 / 5;
+ }
+
+
+/* 
+.container:nth-child(1) {   
+    animation-delay: calc(0 * var(--anim-delay-step));
+}
+
+.container:nth-child(2) {
+    animation-delay: calc(1 * var(--anim-delay-step));
+}
+
+.container:nth-child(3) {
+    animation-delay: calc(2 * var(--anim-delay-step));
+}
+
+.container:nth-child(4) {
+    animation-delay: calc(3 * var(--anim-delay-step));
+}
+
+.container:nth-child(5) {
+    animation-delay: calc(4 * var(--anim-delay-step));
+}
+
+.container:nth-child(6) {
+    animation-delay: calc(5 * var(--anim-delay-step));
+}
+
+.container:nth-child(7) {
+    animation-delay: calc(6 * var(--anim-delay-step));
+}
+
+.container:nth-child(8) {
+    animation-delay: calc(7 * var(--anim-delay-step));
+}
+
+ */
+
+
+
+
+
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translate(-50%,-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translate(0);
+    }
+  }
+
+
+  /* dialog {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+  }
+  
+  dialog[open] {
+    pointer-events: auto;
+  }
+  
+  dialog.show {
+    opacity: 1;
+    transform: translateY(0);
+  } */
